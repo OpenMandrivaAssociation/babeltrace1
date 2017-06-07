@@ -1,0 +1,8 @@
+--- babeltrace-1.5.1/formats/lttng-live/Makefile.am.omv~	2017-06-07 22:34:28.286701774 +0200
++++ babeltrace-1.5.1/formats/lttng-live/Makefile.am	2017-06-07 22:35:25.256383728 +0200
+@@ -14,4 +14,4 @@ libbabeltrace_lttng_live_la_LDFLAGS = \
+ 	$(LD_NO_AS_NEEDED) -version-info $(BABELTRACE_LIBRARY_VERSION)
+ 
+ libbabeltrace_lttng_live_la_LIBADD = \
+-	$(top_builddir)/lib/libbabeltrace.la
++	$(top_builddir)/lib/libbabeltrace.la $(top_builddir)/formats/ctf/libbabeltrace-ctf.la
