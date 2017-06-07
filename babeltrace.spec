@@ -13,6 +13,8 @@ BuildRequires:	pkgconfig(glib-2.0)
 BuildRequires:	pkgconfig(libdw)
 BuildRequires:	pkgconfig(libelf)
 BuildRequires:	pkgconfig(python3)
+BuildRequires:	pkgconfig(popt)
+BuildRequires:	swig
 
 %libpackage babeltrace 1
 %libpackage babeltrace-lttng-live 1
