@@ -69,6 +69,6 @@ Python bindings to the babeltrace trace format converter
 %doc %{_docdir}/%{name}/*
 
 %files -n python-%{name}
-%{py_sitedir}/__pycache__
-%{py_sitedir}/_babeltrace.so*
-%{py_sitedir}/babeltrace.py
+%{py_platsitedir}/__pycache__
+%{py_platsitedir}/_babeltrace.so*
+%{py_platsitedir}/babeltrace.py
