@@ -69,5 +69,5 @@ Python bindings to the babeltrace trace format converter.
 
 %files -n python-%{name}
 %{py_platsitedir}/*.egg-info
-%{py_platsitedir}/*.so
-%{py_platsitedir}/*.py
+%{py_platsitedir}/%{name}/*.so
+%{py_platsitedir}/%{name}/*.py
