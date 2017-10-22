@@ -8,7 +8,6 @@ License:	GPLv2
 Group:		System/Libraries
 Url:		http://diamon.org/babeltrace
 Source0:	http://www.efficios.com/files/babeltrace/babeltrace-%{version}.tar.bz2
-Patch0:		babeltrace-1.5.1-fix-linkage.patch
 BuildRequires:	pkgconfig(glib-2.0)
 BuildRequires:	pkgconfig(libdw)
 BuildRequires:	pkgconfig(libelf)
