@@ -2,7 +2,7 @@
 
 Summary:	An open source trace format converter
 Name:		babeltrace
-Version:	1.5.1
+Version:	1.5.3
 Release:	1
 License:	GPLv2
 Group:		System/Libraries
@@ -24,7 +24,7 @@ BuildRequires:	swig
 %libpackage babeltrace-ctf-text 1
 
 %description
-An open source trace format converter
+An open source trace format converter.
 
 %package -n %{devname}
 Summary:	Development files for the babeltrace trace format converter
@@ -37,14 +37,14 @@ Requires:	%mklibname babeltrace-ctf-metadata 1
 Requires:	%mklibname babeltrace-ctf-text 1
 
 %description -n %{devname}
-Development files for the babeltrace trace format converter
+Development files for the babeltrace trace format converter.
 
 %package -n python-%{name}
 Summary:	Python bindings to the babeltrace trace format converter
 Group:		Development/Python
 
 %description -n python-%{name}
-Python bindings to the babeltrace trace format converter
+Python bindings to the babeltrace trace format converter.
 
 %prep
 %setup -q
