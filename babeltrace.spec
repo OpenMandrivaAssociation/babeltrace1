@@ -13,6 +13,7 @@ BuildRequires:	pkgconfig(libdw)
 BuildRequires:	pkgconfig(libelf)
 BuildRequires:	pkgconfig(python3)
 BuildRequires:	pkgconfig(popt)
+BuildRequires:	pkgconfig(uuid)
 BuildRequires:	swig
 
 %libpackage babeltrace 1
