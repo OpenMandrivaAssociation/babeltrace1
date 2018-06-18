@@ -2,7 +2,7 @@
 
 Summary:	An open source trace format converter
 Name:		babeltrace
-Version:	1.5.3
+Version:	1.5.5
 Release:	1
 License:	GPLv2
 Group:		System/Libraries
@@ -71,3 +71,4 @@ Python bindings to the babeltrace trace format converter.
 %{py_platsitedir}/*.egg-info
 %{py_platsitedir}/%{name}/*.so
 %{py_platsitedir}/%{name}/*.py
+%{py_platsitedir}/%{name}/__pycache__
