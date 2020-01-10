@@ -48,7 +48,7 @@ Python bindings to the babeltrace trace format converter.
 
 %prep
 %setup -q
-%apply_patches
+%autopatch -p1
 %configure --enable-python-bindings
 
 %build
