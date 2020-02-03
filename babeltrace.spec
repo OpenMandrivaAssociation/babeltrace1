@@ -3,7 +3,7 @@
 Summary:	An open source trace format converter
 Name:		babeltrace
 Version:	1.5.6
-Release:	3
+Release:	4
 License:	GPLv2
 Group:		System/Libraries
 Url:		http://diamon.org/babeltrace
@@ -29,6 +29,7 @@ An open source trace format converter.
 %package -n %{devname}
 Summary:	Development files for the babeltrace trace format converter
 Group:		Development/Other
+Provides:	lib%{name} = %{EVRD}
 Requires:	%mklibname babeltrace 1
 Requires:	%mklibname babeltrace-lttng-live 1
 Requires:	%mklibname babeltrace-dummy 1
