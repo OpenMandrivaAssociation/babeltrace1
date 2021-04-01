@@ -2,8 +2,8 @@
 
 Summary:	An open source trace format converter
 Name:		babeltrace
-Version:	1.5.6
-Release:	4
+Version:	1.5.8
+Release:	1
 License:	GPLv2
 Group:		System/Libraries
 Url:		http://diamon.org/babeltrace
@@ -48,15 +48,14 @@ Group:		Development/Python
 Python bindings to the babeltrace trace format converter.
 
 %prep
-%setup -q
-%autopatch -p1
+%autosetup -p1
 %configure --enable-python-bindings
 
 %build
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %{_bindir}/babeltrace
