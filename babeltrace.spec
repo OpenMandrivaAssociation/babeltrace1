@@ -1,3 +1,5 @@
+%define _disable_ld_no_undefined 1
+
 %define devname %mklibname -d babeltrace
 
 Summary:	An open source trace format converter
