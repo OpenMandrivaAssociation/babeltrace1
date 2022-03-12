@@ -13,7 +13,7 @@ Source0:	http://www.efficios.com/files/babeltrace/babeltrace-%{version}.tar.bz2
 BuildRequires:	pkgconfig(glib-2.0)
 BuildRequires:	pkgconfig(libdw)
 BuildRequires:	pkgconfig(libelf)
-BuildRequires:	pkgconfig(python3)
+BuildRequires:	pkgconfig(python)
 BuildRequires:	pkgconfig(popt)
 BuildRequires:	pkgconfig(uuid)
 BuildRequires:	swig
@@ -51,9 +51,9 @@ Python bindings to the babeltrace trace format converter.
 
 %prep
 %autosetup -p1
-%configure --enable-python-bindings
 
 %build
+%configure --enable-python-bindings
 %make_build
 
 %install
@@ -67,11 +67,11 @@ Python bindings to the babeltrace trace format converter.
 %{_includedir}/babeltrace
 %{_libdir}/*.so
 %{_libdir}/pkgconfig/*.pc
-%{_mandir}/man1/*
+%doc %{_mandir}/man1/*
 %doc %{_docdir}/%{name}/*
 
 %files -n python-%{name}
 %{py_platsitedir}/*.egg-info
+%dir %{py_platsitedir}/%{name}
 %{py_platsitedir}/%{name}/*.so
 %{py_platsitedir}/%{name}/*.py
-%{py_platsitedir}/%{name}/__pycache__
