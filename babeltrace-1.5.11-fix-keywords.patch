@@ -1,0 +1,12 @@
+diff -up babeltrace-1.5.11/formats/ctf/ir/utils.c.omv~ babeltrace-1.5.11/formats/ctf/ir/utils.c
+--- babeltrace-1.5.11/formats/ctf/ir/utils.c.omv~	2023-07-25 16:50:44.966437409 +0200
++++ babeltrace-1.5.11/formats/ctf/ir/utils.c	2023-07-25 16:50:48.719469356 +0200
+@@ -35,7 +35,7 @@ const char * const reserved_keywords_str
+ 	"const", "char", "clock", "double", "enum", "env", "event",
+ 	"floating_point", "float", "integer", "int", "long", "short", "signed",
+ 	"stream", "string", "struct", "trace", "typealias", "typedef",
+-	"unsigned", "variant", "void" "_Bool", "_Complex", "_Imaginary"};
++	"unsigned", "variant", "void", "_Bool", "_Complex", "_Imaginary"};
+ 
+ static GHashTable *reserved_keywords_set;
+ static int init_done;
