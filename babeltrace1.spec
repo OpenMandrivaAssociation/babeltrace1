@@ -33,12 +33,12 @@ An open source trace format converter.
 Summary:	Development files for the babeltrace trace format converter
 Group:		Development/Other
 Provides:	lib%{name} = %{EVRD}
-Requires:	%mklibname babeltrace = %{EVRD}
-Requires:	%mklibname babeltrace-lttng-live = %{EVRD}
-Requires:	%mklibname babeltrace-dummy = %{EVRD}
-Requires:	%mklibname babeltrace-ctf = %{EVRD}
-Requires:	%mklibname babeltrace-ctf-metadata = %{EVRD}
-Requires:	%mklibname babeltrace-ctf-text = %{EVRD}
+Requires:	%{mklibname babeltrace} = %{EVRD}
+Requires:	%{mklibname babeltrace-lttng-live} = %{EVRD}
+Requires:	%{mklibname babeltrace-dummy} = %{EVRD}
+Requires:	%{mklibname babeltrace-ctf} = %{EVRD}
+Requires:	%{mklibname babeltrace-ctf-metadata} = %{EVRD}
+Requires:	%{mklibname babeltrace-ctf-text} = %{EVRD}
 
 %description -n %{devname}
 Development files for the babeltrace trace format converter.
