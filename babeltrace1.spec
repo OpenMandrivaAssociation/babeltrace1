@@ -1,6 +1,6 @@
 %define _disable_ld_no_undefined 1
 
-%define devname %mklibname -d babeltrace
+%define devname %mklibname -d babeltrace1
 
 Summary:	An open source trace format converter
 Name:		babeltrace
@@ -33,12 +33,12 @@ An open source trace format converter.
 Summary:	Development files for the babeltrace trace format converter
 Group:		Development/Other
 Provides:	lib%{name} = %{EVRD}
-Requires:	%mklibname babeltrace
-Requires:	%mklibname babeltrace-lttng-live
-Requires:	%mklibname babeltrace-dummy
-Requires:	%mklibname babeltrace-ctf
-Requires:	%mklibname babeltrace-ctf-metadata
-Requires:	%mklibname babeltrace-ctf-text
+Requires:	%mklibname babeltrace = %{EVRD}
+Requires:	%mklibname babeltrace-lttng-live = %{EVRD}
+Requires:	%mklibname babeltrace-dummy = %{EVRD}
+Requires:	%mklibname babeltrace-ctf = %{EVRD}
+Requires:	%mklibname babeltrace-ctf-metadata = %{EVRD}
+Requires:	%mklibname babeltrace-ctf-text = %{EVRD}
 
 %description -n %{devname}
 Development files for the babeltrace trace format converter.
