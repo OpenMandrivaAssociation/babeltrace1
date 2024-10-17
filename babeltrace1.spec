@@ -8,7 +8,7 @@ Version:	1.5.11
 Release:	1
 License:	GPLv2
 Group:		System/Libraries
-Url:		http://diamon.org/babeltrace
+Url:		https://diamon.org/babeltrace
 Source0:	http://www.efficios.com/files/babeltrace/babeltrace-%{version}.tar.bz2
 Patch0:		babeltrace-1.5.11-fix-keywords.patch
 BuildRequires:	pkgconfig(glib-2.0)
